@@ -1,0 +1,190 @@
+<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>💌</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;600&family=Dancing+Script&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(270deg, #ffe6f0, #ffe3ec, #ffeaf5);
+      background-size: 600% 600%;
+      animation: gradient 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 700px;
+      width: 90%;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+      animation: fadeIn 2s ease;
+      text-align: center;
+    }
+
+    .card h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8rem;
+      color: #d81b60;
+      margin-bottom: 1rem;
+    }
+
+    #typedText {
+      font-size: 1.2rem;
+      color: #444;
+      min-height: 120px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      margin-top: 1.2rem;
+      background-color: #ea598e;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      background-color: #c2185b;
+      transform: scale(1.05);
+    }
+
+    .fadeIn {
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .gallery {
+      margin-top: 1.5rem;
+    }
+
+    .photo-square {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .banner:hover {
+      transform: scale(1.02);
+    }
+
+    .img-caption {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #555;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .mensaje-romantico {
+      margin-top: 1rem;
+      color: #555;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    iframe {
+      margin-top: 2rem;
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>For my dear Keidy 💖</h1>
+    <p id="typedText"></p>
+
+    <button class="btn" onclick="showExtra()">Ver mensaje oculto 💬</button>
+    <div id="extraMessage" class="hidden fadeIn">
+      <p class="mensaje-romantico">
+       Esta carta la hice con todo el corazón, a pesar las peleas o discusiones que hubo, siempre me senti culpable por mis acciones pero eso no quita lo mucho que te quiero mucho, las veces que nosotros nos divertiamos o jugabamos o incluso hacer llamadas es lo mas lindo que jamas experimente en toda mi vida a pesar de mi Transtorno Depresivo Mayor, Gracias a ti supere obstaculos, depresion, motivación, autoestima en mí, lo cual eso me hizo quererme mas y las veces que me decias eso lloraba a ocultaba las veces que estaba así, perdon las veces que aveces no podria demotrar ese cariño al principio porque no estaba preparado por el maltrato que recibí y poco a poco logre superarlo y di mi mejor cariño y amor hacia alguien y esa eres tú, senti emociónes los cuales me hicieron sentir especial, cada momento, cada momento es unico y me llena de emocion tanto me hace lo suficientemente querido ♡ te amo mucho de corazon Mi pastelito :3
+      </p>
+    </div>
+
+    <button class="btn" onclick="showGallery()">Only You 📷🩷</button>
+    <div id="galleryContainer" class="hidden fadeIn gallery">
+      <img src="Downloads/keidy3.png" alt="La mujer más linda ♥️" class="photo-square">
+      <p class="img-caption">Esta es la única foto en la cual fue la primera vez que me enamoré de ti, sentí algo unico y es la unica foto que siempre tengo en mi cartera porque es el unico recuerdo de ti</p>
+
+      <img src="Downloads/keidy2.jpg" alt="Banner bonito" class="banner">
+      <p class="img-caption">Esta foto es donde la uso siempre de banner borrosa SJJSJSJ aunque, la uso mas de fondo de pantalla porque es la foto que mas me encanta y mucho mas sobre tu belleza y sobre lo linda que eres 
+  </p>
+    </div>
+
+   <h1>Esta playlist te la dedico porque te amo mucho de mi corazon</h1> 
+    <iframe src="https://open.spotify.com/embed/playlist/6IOiTlXZlYBJ25hShRoPIR?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <script>
+    const text = "Esta cartita es sobre algo especial que tengo hacia ti y es lo mas lindo que jamas haya vivido ♥️";
+    const textElement = document.getElementById("typedText");
+    let index = 0;
+
+    function typeWriter() {
+      if (index < text.length) {
+        textElement.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 40);
+      }
+    }
+
+    function showExtra() {
+      document.getElementById("extraMessage").classList.remove("hidden");
+    }
+
+    function showGallery() {
+      document.getElementById("galleryContainer").classList.remove("hidden");
+    }
+
+    typeWriter();
+  </script>
+</body>
+</html>

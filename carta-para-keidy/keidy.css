@@ -1,0 +1,50 @@
+.photo-square {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-top: 1rem;
+}
+
+.photo-square:hover {
+  transform: scale(1.05);
+}
+
+.banner {
+  width: 100%;
+  max-width: 600px; /* 👈 Evita que se desborde en pantallas grandes */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  margin-top: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.banner:hover {
+  transform: scale(1.02);
+}
+
+.img-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.img-caption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.mensaje-romantico {
+  margin-top: 1rem;
+  color: #555;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 10px;
+}
